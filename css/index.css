@@ -1,0 +1,266 @@
+@charset "utf-8";
+/*顶部*/
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 64px;
+    z-index: 9;
+}
+
+.top h1 a {
+    display: block;
+    background: url("../images/logo.png") no-repeat;
+    width: 52px;
+    height: 54px;
+    margin: 5px 20px;
+    text-indent: -999px;
+}
+
+.top b {
+    display: block;
+    width: 100px;
+    height: 40px;
+    background: url("../images/resume.png") no-repeat;
+    -webkit-background-size: 100px 40px;
+    background-size: 100px 40px;
+    float: left;
+    margin: 10px 12px;
+}
+
+/*.top h1 a:hover {
+    background-position: -53px 0;
+}*/
+
+#menu {
+    position: fixed;
+    right: 0px;
+    top: 15px;
+    z-index: 10;
+    width: 678px;
+}
+
+#menu li {
+    float: left;
+    margin: 0 10px 0 0;
+    font-size: 14px;
+}
+
+#menu a {
+    float: left;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+#menu .active a {
+    color: #fff;
+    background-color: #333;
+}
+
+.section {
+    font: 18px "Microsoft Yahei";
+    color: #fff;
+}
+
+/*第一屏*/
+.first .box {
+    width: 480px;
+    margin: 0 auto;
+}
+
+.first h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.first h2 a,.first h2 img {
+    width: 180px;
+    height: 180px;
+    display: block;
+}
+
+.first h2 img {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: all 0.2s linear;
+}
+
+.first h2 img:hover {
+    transition: all 0.2s linear;
+    box-shadow: 0 0 15px 5px #ccc;
+}
+
+.first h2 p {
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 15px;
+
+}
+
+.first .info p {
+    line-height: 30px;
+}
+
+/*第二屏*/
+.second .box1 {
+    width: 100%;
+    padding: 0px 8%;
+    margin-top: 50px;
+    visibility: hidden;
+}
+
+.second .box1 a {
+    font: 16px/25px "microsoft yahei";
+    background-color: rgba(234, 246, 208, 0.9);
+    border-radius: 10px;
+    margin: 7px;
+    padding: 5px 15% 5px 10px;
+    color: #336699;
+    display: inline-block;
+}
+
+.box1 p:nth-child(2n) a {
+    background-color: rgba(234, 246, 180, 0.9);
+
+}
+
+/*第三屏*/
+.third {
+
+}
+.box2 {
+    margin: auto 10%;
+    position: relative;
+}
+.box2 span {
+    display: block;
+    padding-left: 25px;
+    margin-right: 50px;
+}
+.box2 span:nth-of-type(2) {
+    margin:150px 0;
+}
+.box2 span:nth-of-type(2)::after {
+    content:'';
+    position: absolute;
+    width: 100px;
+    height: 38px;
+    background: url(../images/sl.png) no-repeat;
+    -webkit-background-size: 100px 38px;
+    background-size: 100px 38px;
+    margin-top: 30px;
+    margin-left: -90px;
+}
+.box2 span:nth-of-type(1)::after {
+    content:'';
+    position: absolute;
+    width: 100px;
+    height: 44px;
+    background: url(../images/daqian.png) no-repeat;
+    -webkit-background-size: 100px 44px;
+    background-size: 100px 44px;
+    margin-top: 30px;
+    margin-left: -40px;
+}
+.box2 span::before,.experience>div p::before {
+    content:"";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-color: #46B0B9;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin:3px 0 0 -25px;
+    z-index: 1;
+
+
+}
+.third .line {
+    background-color: #fff;
+    width: 4px;height: 0%;
+    position: absolute;
+    left: 7px;top: 3px;
+
+}
+.third .experience {
+    overflow: hidden;
+    visibility: hidden;
+    
+}
+.third .experience>div {
+    height: 150px;
+    /*background-color: darkcyan;*/
+    /*border: 1px solid #000;*/
+    margin: 20px 0;
+    overflow:hidden;
+}
+.experience>div h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.experience>div p {
+    font-size: 16px ;
+    line-height: 25px;
+    text-indent:20px;
+}
+.experience>div p::before {
+    background-color: #fff;
+    border: 1px solid #fff;
+    width: 5px;
+    height: 5px;
+    margin:10px 0 0 -15px;
+}
+
+
+
+/*第四屏*/
+.fourth {
+    padding:20px 8% 0;
+}
+.fourth li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin:15px 0;
+}
+.fourth li a {
+    display:block;
+    /*margin-left: 10%;*/
+    width: 80%;
+    /*border-radius:50%;*/
+    background-color: rgba(0,0,0,1);
+    transition: all 0.5s linear;
+}
+.fourth li a img {
+    display:block;
+    width: 100%;
+
+    /*border-radius:20px;*/
+
+    transition: all 0.5s linear;
+}
+.fourth li:hover img {
+    transform:scale(1.2);
+
+    opacity:0.4;
+}
+.fourth li:hover a {
+    /*transform:scale(1.2);*/
+}
+
+
+/*第五屏*/
+.fifth {
+    
+}
+
+
+
+
