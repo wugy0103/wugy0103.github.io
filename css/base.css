@@ -31,9 +31,10 @@ a {
     text-decoration: none;
     color: #333;
 }
-s,i,b,em {
+s,i,b,u {
     font-style: normal;
     text-decoration: none;
+    font-weight: normal;
 }
 .clearfix::after {
     content: '';
