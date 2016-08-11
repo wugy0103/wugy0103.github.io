@@ -10,7 +10,7 @@
         })
     }])
     app.controller('detailsController',['$scope','httpService','$routeParams', function ($scope, httpService,$routeParams) {
-        httpService.jsonp('http://api.douban.com/v2/movie/subject/'+$routeParams.id,{}, function (response) {
+        httpService.jsonp('https://api.douban.com/v2/movie/subject/'+$routeParams.id,{}, function (response) {
             console.log(response);
             $scope.movie = response;
             $scope.$apply()
