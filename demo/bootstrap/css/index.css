@@ -1,0 +1,603 @@
+@charset "utf-8";
+
+/*公用样式*/
+body {
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+a {
+    color: #333;
+
+}
+a:hover {
+    color: #333;
+    text-decoration: none;
+
+
+}
+.ml10 {
+    margin-left: 10px;
+}
+/*定义字体*/
+
+@font-face {
+    font-family: font-wjs;
+    src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'),
+    url('../fonts/MiFie-Web-Font.svg') format('svg'),
+    url('../fonts/MiFie-Web-Font.ttf') format('truetype'),
+    url('../fonts/MiFie-Web-Font.woff') format('woff');
+}
+.wjs-icon {
+    font-family: font-wjs;
+}
+.wjs-icon-phone::before {
+    content: '\e908';
+}
+.wjs-icon-tel::before {
+    content: '\e909';
+}
+.wjs-icon-logo::before {
+    content: '\e920';
+}
+.wjs-icon-word::before {
+    content: '\e93e';
+}
+
+.wjs_icon_E903::before{
+    content: "\e903";
+}
+.wjs_icon_E906::before{
+    content: "\e906";
+}
+.wjs_icon_E905::before{
+    content: "\e905";
+}
+.wjs_icon_E907::before{
+    content: "\e907";
+}
+.wjs_icon_E901::before{
+    content: "\e901";
+}
+.wjs_icon_E900::before{
+    content: "\e900";
+}
+.wjs_icon_E904::before{
+    content: "\e904";
+}
+.wjs_icon_E902::before{
+    content: "\e902";
+}
+.wjs_icon_E906::before{
+    content: "\e906";
+}
+.wjs_icon_new01::before{
+    content: "\e90e";
+}
+.wjs_icon_new02::before{
+    content: "\e90f";
+}
+.wjs_icon_new03::before{
+    content: "\e910";
+}
+.wjs_icon_new04::before{
+    content: "\e911";
+}
+.wjs_icon_partner01::before{
+    content:"\e946";
+}
+.wjs_icon_partner02::before{
+    content: "\e92f";
+}
+.wjs_icon_partner03::before{
+    content: "\e92e";
+}
+.wjs_icon_partner04::before{
+    content: "\e92a";
+}
+.wjs_icon_partner05::before{
+    content: "\e929";
+}
+.wjs_icon_partner06::before{
+    content: "\e931";
+}
+.wjs_icon_partner07::before{
+    content: "\e92c";
+}
+.wjs_icon_partner08::before{
+    content: "\e92b";
+}
+.wjs_icon_partner09::before{
+    content: "\e92d";
+}
+
+
+
+
+
+/*功能模块样式*/
+.wjs-topBar {
+    border-bottom: 1px solid #cccccc;
+    color: #666;
+    font-size: 12px;
+}
+.wjs-topBar a {
+    font-size: 12px;
+    color: #666;
+}
+
+.wjs-topBar >.container>.row>div {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.wjs-topBar >.container>.row>div + div {
+    border-left: 1px solid #cccccc;
+}
+.wjs-topBar .wjs-app {
+    display: block;
+}
+.wjs-topBar .wjs-app > img {
+    display: none;
+}
+.wjs-topBar .wjs-app:hover > img {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -60px;
+    border: 1px solid #cccccc;
+    border-top: none;
+}
+.wjs-topBar .btn-register,.wjs-topBar .btn-register:hover {
+    background-color: #e92322;
+    color: #ffffff;
+    padding: 3px 13px;
+    border: 1px solid #e92322;
+
+}
+.wjs-topBar .btn-login:hover {
+    color: #666666;
+    text-decoration: none;
+}
+
+
+/*导航条样式*/
+
+.wjs-nav {
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 1px;
+}
+.wjs-nav .navbar-brand {
+    color: #777;
+    height: 80px;
+    line-height: 50px;
+}
+.wjs-nav .navbar-brand .wjs-icon-logo{
+    font-size: 50px;
+    color: #e92322;
+    vertical-align: middle;
+}
+.wjs-nav .navbar-brand .wjs-icon-word {
+    color:#333;
+    font-size: 36px;
+    vertical-align: middle;
+}
+.wjs-nav .navbar-brand:hover,
+.wjs-nav .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.wjs-nav .navbar-text {
+    color: #777;
+}
+.wjs-nav .navbar-nav > li > a {
+    color: #777;
+    height: 80px;
+    line-height: 50px;
+}
+.wjs-nav .navbar-nav > li > a:hover,
+.wjs-nav .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 3px solid #e92322;
+}
+.wjs-nav .navbar-nav > .active > a,
+.wjs-nav .navbar-nav > .active > a:hover,
+.wjs-nav .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #fff;
+    border-bottom: 3px solid #e92322;
+}
+.wjs-nav .navbar-nav > .disabled > a,
+.wjs-nav .navbar-nav > .disabled > a:hover,
+.wjs-nav .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.wjs-nav .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 23px;
+}
+.wjs-nav .navbar-toggle:hover,
+.wjs-nav .navbar-toggle:focus {
+    background-color: #ddd;
+}
+.wjs-nav .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.wjs-nav .navbar-collapse,
+.wjs-nav .navbar-form {
+    border-color: #e7e7e7;
+}
+.wjs-nav .navbar-nav > .open > a,
+.wjs-nav .navbar-nav > .open > a:hover,
+.wjs-nav .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+    .wjs-nav .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .wjs-nav .navbar-nav .open .dropdown-menu > li > a:hover,
+    .wjs-nav .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .wjs-nav .navbar-nav .open .dropdown-menu > .active > a,
+    .wjs-nav .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .wjs-nav .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .wjs-nav .navbar-nav .open .dropdown-menu > .disabled > a,
+    .wjs-nav .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .wjs-nav .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.wjs-nav .navbar-link {
+    color: #777;
+}
+.wjs-nav .navbar-link:hover {
+    color: #333;
+}
+.wjs-nav .btn-link {
+    color: #777;
+}
+.wjs-nav .btn-link:hover,
+.wjs-nav .btn-link:focus {
+    color: #333;
+}
+.wjs-nav .btn-link[disabled]:hover,
+fieldset[disabled] .wjs-nav .btn-link:hover,
+.wjs-nav .btn-link[disabled]:focus,
+fieldset[disabled] .wjs-nav .btn-link:focus {
+    color: #ccc;
+}
+
+/*banner图*/
+.wjs-banner {
+
+}
+.pc-imgbox {
+    display: block;
+    width: 100%;
+    height: 410px;
+    background-repeat:  no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+/*.pc-imgbox2{*/
+    /*background-image: url("../images/slide_02_2000x410.jpg");*/
+/*}*/
+/*.pc-imgbox3{*/
+    /*background-image: url("../images/slide_03_2000x410.jpg");*/
+/*}*/
+/*.pc-imgbox4{*/
+    /*background-image: url("../images/slide_04_2000x410.jpg");*/
+/*}*/
+.m-imgbox {
+    display: block;
+    width: 100%;
+}
+.m-imgbox img {
+    width: 100%;
+    display: block;
+}
+
+/*信息*/
+.wjs-info {
+    padding: 50px;
+    border-bottom: 1px solid #cccccc;
+}
+.wjs-info a {
+    display: block;
+    padding: 15px;
+}
+.wjs-info a:hover{
+    color:#e92322;
+}
+.wjs-info span.wjs-icon{
+    font-size: 30px;
+}
+
+@media screen and (min-width:1200px){
+    .wjs-info > .container,.wjs-book >.container {
+        width: 910px;
+    }
+}
+/*预约*/
+.wjs-book {
+    border-bottom: 1px solid #cccccc;
+    padding: 20px 10px;
+}
+.wjs-book .wjs-icon {
+    font-size: 24px;
+}
+.wjs-book a {
+    color: #e92322;
+    border-bottom: 1px dashed #e92322;
+    text-decoration: none;
+}
+.wjs-book .pull-right:hover{
+    color: #e92322;
+}
+
+/*产品*/
+.wjs-product {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #cccccc;
+    padding: 20px;
+}
+
+
+.wjs-product-tabs {
+    border-bottom: 1px solid #ddd;
+
+}
+.wjs-product-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+    padding-left: 20px;
+}
+.wjs-product-tabs > li > a {
+    /*margin-right: 2px;*/
+    line-height: 1.42857143;
+    border-radius: 4px 4px 0 0;
+}
+.wjs-product-tabs > li > a:hover {
+    background-color: #f5f5f5;
+
+}
+.wjs-product-tabs > li.active > a,
+.wjs-product-tabs > li.active > a:hover,
+.wjs-product-tabs > li.active > a:focus {
+    color: #333;
+    cursor: default;
+    border-bottom: 3px solid #e92322;
+    background-color: #f5f5f5;
+
+}
+.wjs-product-tabs.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}
+.wjs-product-tabs.nav-justified > li {
+    float: none;
+}
+.wjs-product-tabs.nav-justified > li > a {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.wjs-product-tabs.nav-justified > .dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+@media (min-width: 768px) {
+    .wjs-product-tabs.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+    .wjs-product-tabs.nav-justified > li > a {
+        margin-bottom: 0;
+    }
+}
+.wjs-product-tabs.nav-justified > li > a {
+    margin-right: 0;
+    border-radius: 4px;
+}
+.wjs-product-tabs.nav-justified > .active > a,
+.wjs-product-tabs.nav-justified > .active > a:hover,
+.wjs-product-tabs.nav-justified > .active > a:focus {
+    /*border: 1px solid #ddd;*/
+}
+@media (min-width: 768px) {
+    .wjs-product-tabs.nav-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .wjs-product-tabs.nav-justified > .active > a,
+    .wjs-product-tabs.nav-justified > .active > a:hover,
+    .wjs-product-tabs.nav-justified > .active > a:focus {
+        /*border-bottom-color: #fff;*/
+    }
+}
+/*产品盒子*/
+.wjs-product-tabs-parsent {
+    overflow: hidden;
+}
+.product-box {
+    height: 150px;
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 2px 2px 1px #cccccc;
+    -moz-box-shadow: 2px 2px 2px 1px #cccccc;
+    box-shadow: 2px 2px 2px 1px #cccccc;
+    margin-top: 20px;
+}
+.product-box>.product-left {
+    height: 100%;
+    overflow: hidden;
+}
+.product-box>.product-right {
+    float: right;
+    width: 108px;
+    border-left: 1px dashed #d8d8d8;
+    height: 100%;
+    position: relative;
+}
+.product-box>.product-right:before,.product-box>.product-right:after{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: -6px;
+    background-color: #f5f5f5;
+}
+.product-box>.product-right:before{
+    top: -6px;
+    box-shadow: 0px -2px 2px 0px #d8d8d8 inset;
+
+}
+.product-box>.product-right:after{
+    bottom: -6px;
+    box-shadow: 2px 2px 2px 0px #d8d8d8 inset;
+
+}
+.product-right p {
+    text-align: center;
+}
+.product-right p:first-of-type {
+    color: #e92322;
+    margin-top: 20px;
+
+}
+.product-right p b {
+    font-size: 50px;
+}
+.product-right p:last-of-type {
+    font-size: 12px;
+}
+/*小提示*/
+.wjs-tip {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 10px;
+}
+.wjs-tip span {
+    font-size: 12px;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    line-height: 15px;
+    border: 1px solid #000;
+    display: inline-block;
+}
+.wjs-tip span:first-of-type {
+    color: #e92322;
+    border-color: #e92322;
+}
+.wjs-tip span:last-of-type {
+    color: green;
+    border-color: green;
+}
+.product-left {
+    font-size: 12px;
+
+}
+.product-left h3 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 10px;
+
+}
+.product-left p {
+    height: 15px;
+    line-height: 15px;
+    overflow: hidden;
+}
+.product-left .progress {
+    height: 10px;
+}
+.product-box.exp {
+    background-color: #e92322;
+    color: #ffffff;
+    position: relative;
+}
+.exp .product-right p:first-of-type {
+    color: #ffffff;
+
+}
+.exp:after {
+    content: '\e915';
+    font-family: font-wjs;
+    position: absolute;
+    color: #ffffff;
+    left: 0;
+    top: -7px;
+    font-size: 35px;
+}
+
+
+/*新闻模块*/
+.wjs-news {
+    padding: 50px 0;
+}
+.wjs-news h3 {
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: 1px solid #cccccc;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+}
+.wjs-news h3:after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    bottom: -3px;
+    height: 6px;
+    width: 6px;
+
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+}
+.nav-tabs-news {
+    border-bottom: none;
+}
+.nav-tabs-news >li {
+    float: left;
+}
+.nav-tabs-news >li >a {
+
+}
+
+.wjs-icon-new1::after {
+    content: '\e90e';
+}
+.wjs-icon-new2::after {
+    content: '\e90f';
+}
+.wjs-icon-new3::after {
+    content: '\e910';
+}
+.wjs-icon-new4::after {
+    content: '\e911';
+}
+
+
+
+
+
