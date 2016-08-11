@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>电影展示</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/wap.css">
+</head>
+<body ng-app="moviecat">
+    <!-- 顶部导航栏开始 -->
+    <div class="top">
+        <div class="header">
+            <a href="#/home_page"><img src="assets/img/logo.png" alt=""></a>
+            <div class="search" ng-controller="searchController">
+                <form ng-submit="search()">
+                    <input class="my-input" type="text" ng-model="query" placeholder="电影搜索">
+                    <button>搜索</button>
+                </form>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <!--li中添加 active 类样式，显示焦点状态。-->
+                <li auto-active><a href="#/home_page">首页</a></li>
+                <li auto-active><a href="#/in_theaters">正在热映</a></li>
+                <li auto-active><a href="#/coming_soon">即将上映</a></li>
+                <li auto-active><a href="#/top250">Top250</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- 顶部导航栏结束 -->
+
+
+
+        <div ng-view> </div>
+
+
+
+        <!--其他-->
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>版权所有&copy; 吴国源</p>
+        </div>
+    </footer>
+    <script src="assets/js/prefixfree.min.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="component/http-service.js"></script>
+    <script src="movie_list/movie_list.js"></script>
+    <script src="component/auto-active.js"></script>
+    <script src="home_page/home_page.js"></script>
+    <script src="details/details.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
