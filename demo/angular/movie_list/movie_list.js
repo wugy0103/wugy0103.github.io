@@ -32,7 +32,7 @@
         var start = (page - 1) * count;
         $scope.nowPage = page;
         var totalPage = 0;
-        httpService.jsonp('http://api.douban.com/v2/movie/' + $routeParams.movieType, {
+        httpService.jsonp('https://api.douban.com/v2/movie/' + $routeParams.movieType, {
             start: start,
             count: count,
             q:$routeParams.q
