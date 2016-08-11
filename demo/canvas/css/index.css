@@ -1,0 +1,356 @@
+@charset "utf-8";
+body,img ,ul ,ol, li h1,h2,h3,input,button {
+    margin: 0;
+    padding: 0;
+
+}
+img {
+    border:none;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color:#666;
+}
+ul {
+    list-style: none;
+}
+body {
+    background-color: #FCFCFC;
+    font:12px/1 'microsoft yahei';
+}
+.clearfix:after,.clear:before {
+    content: '';
+    display: table;
+
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix {
+    *zoom:1;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.fl{
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+.nav {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+    padding: 15px 5px;
+
+}
+.top li {
+    float: left;
+    height: 30px;
+}
+.top li >a {
+    display: block;
+    height: 30px;
+    width: 160px;
+    line-height: 30px;
+    border-left: 1px dashed #eee;
+    text-align: center;
+}
+.top li:nth-child(1)>a {
+    border: none;
+    float: left;
+    width: 70px;
+}
+.top li:nth-child(2)>a,.top li:nth-child(3)>a {
+    font-weight: bold;
+    position: relative;
+}
+.top li:nth-child(2)>a::after,.top li:nth-child(3)>a::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 14px;
+    top: -7px;
+    right: 10px;
+    background:url("../images/car.png") no-repeat -35px -111px;
+}
+.allOrder {
+    font-weight: bold;
+    border-bottom: 3px solid red !important;
+    color:red;
+}
+
+.search input {
+    float: left;
+    height: 27px;
+    border: 1px solid #eeeeee;
+    line-height: 27px;
+}
+
+
+
+.search input:nth-child(2) {
+    background: url("../images/car.png") no-repeat  0 -53px;
+    width: 35px;
+    height: 27px;
+    background-color: #F6F6F6;
+
+}
+
+.search input:nth-child(3) {
+    background-color: #F6F6F6;
+    width: 56px;
+    height: 29px;
+    text-align: center;
+}
+.search input.down::before {
+    content: '1';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url("../images/car.png") no-repeat -35px -205px;
+}
+.down {
+    position: relative;
+}
+.down::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url("../images/car.png") no-repeat -35px -205px;
+}
+.pingjia {
+    position: relative;
+}
+.pingjia::before {
+    content: '9';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    line-height: 15px;
+    right: 5px;
+    top: -5px;
+    
+}
+.th {
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+.th ul li  {
+    float: left;
+    background-color: #F6F6F6;
+
+}
+.th ul li a {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    width: 200px;
+    text-align: center;
+
+}
+
+.prolist {
+    border: 1px solid #eeeeee;
+}
+.prolist .shop {
+    height: 30px;
+    line-height: 30px;
+    background-color: #F6F6F6;
+}
+.shop .time {
+    margin: 0 50px;
+}
+.shop .shop-name {
+    margin-left: 100px;
+    position: relative;
+}
+.shop .shop-name::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    width: 17px;
+    height: 17px;
+    background: url("../images/car.png") no-repeat -25px -155px;
+}
+.shop .del {
+    display: block;
+    float: right;
+    width: 13px;
+    height: 13px;
+    margin: 10px 20px 0 0;
+    cursor: pointer;
+    background: url("../images/car.png")no-repeat -23px -132px;
+}
+.prolist .product {
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    border-top: none;
+}
+
+.product .pro-info {
+    height: 119px;
+    width: 695px;
+    float: left;
+    border-right: 1px solid #eeeeee;
+}
+.pro-info .pro-img {
+    float: left;
+    height: 70px;
+    width: 70px;
+    border: 1px solid #eeeeee;
+    margin: 20px 18px;
+}
+.pro-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.pro-info .info-text {
+    float: left;
+    margin-top: 25px;
+}
+
+.pro-info .tit {
+    display: block;
+    line-height: 20px;
+    width: 250px;
+    height: 40px;
+    color:#000;
+}
+.pro-info .search-category {
+    /*display: block;*/
+    margin: 5px 0 0 18px;
+    position: relative;
+}
+.pro-info .search-category:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -18px;
+    width: 17px;
+    height: 17px;
+    background: url("../images/car.png") no-repeat -129px -111px;
+}
+.pro-info>span {
+    float: left;
+    height: 119px;
+    line-height: 119px;
+    color:#ccc;
+    margin-left: 160px;
+}
+.pro-info>.tuihuo {
+    float: left;
+    height: 119px;
+    line-height: 119px;
+    margin-left: 50px;
+}
+
+.product .name {
+    float: left;
+    height: 119px;
+    border-right: 1px solid #eeeeee;
+    width: 125px;
+}
+.product .name a {
+    margin: 50px 0 0 30px;
+    float: left;
+    position: relative;
+}
+.product .name a:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: url("../images/car.png") no-repeat 0 -24px;
+    right: -15px;
+    top: -1px;
+
+}
+.product .price {
+    height: 89px;
+    border-right: 1px solid #eeeeee;
+    width: 125px;
+    text-align: center;
+    color: #cccccc;
+    padding-top: 30px;
+
+}
+.product .state {
+    height: 99px;
+    border-right: 1px solid #eeeeee;
+    width: 125px;
+    text-align: center;
+    padding-top: 20px;
+}
+.product .state p {
+    line-height: 10px;
+}
+.product .state p:nth-child(1) {
+    color: #cccccc;
+}
+.product .state p:nth-child(2) {
+    color: red;
+    position: relative;
+    margin-left: 10px;
+}
+.product .state p:nth-child(2):before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: url("../images/car.png") no-repeat -45px -181px;
+    left: 35px;
+
+}
+.product .buy {
+    height: 89px;
+    width: 122px;
+    text-align: center;
+    padding-top: 30px;
+}
+.product .buy a {
+    display: block;
+}
+.product .buy button {
+    background-color: #f5f5f5;
+    display: block;
+    width: 95px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    outline: none;
+    border: 1px solid #eeeeee;
+    font-family: 'microsoft yahei';
+    margin: 5px auto;
+    position: relative;
+}
+.product .buy button:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    background: url("../images/car.png") no-repeat -23px -181px;
+    top: 8px;
+    left: 5px;
+
+}
+
+
