@@ -223,7 +223,7 @@
 /*第四屏*/
 .fourth {
     padding:20px 8% 0;
-    background: url(../images/bg.jpg) no-repeat center center;
+    background: url(../images/bg4.jpg) no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -295,7 +295,7 @@
 
 /*第五屏*/
 .fifth {
-    background: url(../images/pure.jpg) no-repeat center center;
+    background: url(../images/bg5.jpg) no-repeat center center;
 }
 
 
