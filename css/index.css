@@ -218,8 +218,6 @@
     margin:10px 0 0 -15px;
 }
 
-
-
 /*第四屏*/
 .fourth {
     padding:20px 8% 0;
@@ -234,9 +232,11 @@
     margin:15px 0;
      -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
+    visibility:hidden;
+    animation-fill-mode:backwards;/*解决animate动画后变换无效，这属性在animated类中；规定动画在播放之前或之后，其动画效果是否可见*/
 }
 .fourth li:hover {
-    transform:scale(1.2);
+    transform:scale(1.2) !important;
 }
 .fourth li a.hover-bg {
     display:block;

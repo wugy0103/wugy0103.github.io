@@ -7,7 +7,7 @@ $(function () {
 			menu: '#menu',
 			afterLoad: function (afterlink, index) {
 				var $anim = $(".section").eq(index-1).find(".animated");
-				if(index==2){
+				if(index===2 || index ===4){
 					// console.log(1);
 					$anim.each(function (i) {
 						var that= this;
@@ -19,11 +19,10 @@ $(function () {
 					});
 					return;
 				}
-				if(index==3){
+				if(index===3){
 					$('.line').animate({"height":"100%"}, 1000);
-					// $('.box2 span::before').addClass('animated pulse')
-					// $('.box2').fadeIn(1000);
 				}
+
 				$anim.each(function () {
 					$(this).addClass($(this).data('anim')).css({visibility:'visible'},100)
 				});
