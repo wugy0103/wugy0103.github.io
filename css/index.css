@@ -39,7 +39,7 @@
     right: 0px;
     top: 15px;
     z-index: 10;
-    width: 678px;
+    width: 685px;
 }
 
 #menu li {
@@ -233,7 +233,7 @@
      -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
     visibility:hidden;
-    animation-fill-mode:backwards;/*解决animate动画后变换无效，这属性在animated类中；规定动画在播放之前或之后，其动画效果是否可见*/
+    animation-fill-mode:none;/*解决animate动画后变换无效，这属性在animated类中；规定动画在播放之前或之后，其动画效果是否可见*/
 }
 .fourth li:hover {
     transform:scale(1.2) !important;
@@ -296,6 +296,62 @@
 /*第五屏*/
 .fifth {
     background: url(../images/bg5.jpg) no-repeat center center;
+    text-align: center;
+}
+.fifth .overT,.fifth .overB {
+    width: 100%;
+    height: 50%;
+    background-color: #46C8AF;
+    position: absolute;
+    left: 0;
+} 
+.fifth .overT {
+    top: 0;
+}
+.fifth .overB {
+    bottom: 0;
+}
+.fifth .word .contact_box {
+    text-align: left;
+    display: inline-block;
+}
+.fifth .word .contact {
+    margin: 10px 0;
 }
 
+.fifth .overB>div {
+    visibility: hidden;
+}
+.callme{
+    font-size: 100px;
+    color: #46C8AF;
+    text-indent: -30px;
+    visibility: visible !important;
+}
+.callme span{
+        display: inline-block;
+        position: relative;
+        will-change: transform;
+        animation: diffuseShadow 3s infinite ease-in;
+        
+    }
+.callme span:nth-child(1){ animation-delay: .0s;}
+.callme span:nth-child(2){ animation-delay: .200s;}
+.callme span:nth-child(3){ animation-delay: .400s;}
+.callme span:nth-child(4){ animation-delay: .600s;}
+.callme span:nth-child(5){ animation-delay: .800s;}
+.callme span:nth-child(6){ animation-delay: 1s;}
 
+@keyframes diffuseShadow{
+    0%,10%{
+        text-shadow: 0 0 0 rgba(0,0,0,0);
+        transform: translate3d(50px,0,0);
+    }
+    50%{
+        text-shadow: 0 20px 30px rgba(0,0,0,.3);
+    }
+    70%,100%{
+        text-shadow: 0 0 0 rgba(0,0,0,.3);
+        transform: translate3d(0,0,0);
+    }
+}
