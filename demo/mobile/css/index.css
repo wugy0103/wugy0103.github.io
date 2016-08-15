@@ -1,0 +1,266 @@
+@charset "utf-8";
+.layout {
+	width: 100%;
+	max-width: 640px;
+	min-width: 300px;
+	margin: 0 auto;
+}
+/*头部*/
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	height: 4.5rem;
+
+}
+.top{
+	max-width: 640px;
+	min-width: 300px;
+	width: 100%;
+	margin: 0 auto;
+	height: 4.5rem;
+	background-color: #333333;
+	padding: 0 4.5rem;
+}
+.top h1 {
+	font-size: 1.6rem;
+	color: #ffffff;
+	width: 100%;
+	line-height: 4.5rem;
+	text-align: center;
+}
+.top a {
+	display: block;
+	width: 4.5rem;
+	height: 4.5rem;
+	position: relative;
+}
+.top a:nth-child(2) {
+	margin-left: -100%;
+	left: -4.5rem;
+	background: url('../images/arrow.png') no-repeat center center;
+}
+.top a:last-child {
+	margin-left: -4.5rem;
+	right: -4.5rem;
+	background: url('../images/more.png') no-repeat center center;
+}
+.info {
+	/*width: 100%;*/
+	margin-top: 4.2rem;
+	position: relative;
+}
+.bg {
+	float: left;
+	width: 100%;
+}
+.lbox {
+	width: 40%;
+	height: 100%;
+	/*height: calc(100% - 4rem);*/
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.renwu {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+	border-radius:50%;
+	width: 90%;
+	border: 1px solid #ffffff;
+	opacity: 0.9;
+}
+
+.rbox {
+	width: 60%;
+	height: 100%;
+	/*height: calc(100% - 4rem);*/
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.word {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+	width: 90%;
+	height: 10rem;
+	color:rgba(255,255,255,0.8);
+}
+.word p {
+	font-size: 1.6rem;
+	line-height: 2rem;
+}
+.word a {
+	display: block;
+	width: 60%;
+	border: 1px solid #ffffff;
+	padding: 0.5rem;
+	text-align: center;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	color: #ffffff;
+	background-color: #269abc;
+	opacity: 0.8;
+	margin: 5px 0px 10px 15px;
+}
+
+/*导航*/
+nav {
+	height: 4rem;
+	width: 100%;
+	background-color: rgba(48, 88, 90, 0.4);
+	/*margin-top: -4rem;*/
+	border-radius: 10px 10px 0 0 ;
+}
+.btns a {
+	float: left;
+	width: 25%;
+	height: 4rem;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 0.4 !important;
+	border-radius:0%;
+	margin: 0 !important; 
+}
+.btns a:nth-child(1) {
+	background-image: url(../images/activity.png);
+	border-radius: 10px 0px 0 0
+}
+.btns a:nth-child(2) {
+	background-image: url(../images/photo.png);
+}
+.btns a:nth-child(3) {
+	background-image: url(../images/me.png);
+}
+.btns a:nth-child(4) {
+	background-image: url(../images/activity.png);
+	border-radius: 0px 10px 0 0
+}
+
+/*技术区块*/
+.technology {
+	width: 100%;
+	padding: 0 1rem;
+}
+.technology ul li {
+	padding-left: 4rem;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+	min-height: 6rem;
+}
+.technology ul li:before {
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	background-repeat: no-repeat;
+	-webkit-background-size: 4rem 4rem;
+	background-size: 4rem 4rem;
+	position: absolute;
+	top: 0;bottom: 0;
+	margin: auto;
+	margin-left: -4rem;
+
+}
+.technology ul li:nth-child(1):before {
+	background-image: url(../images/liico/h5.png);
+}
+.technology ul li:nth-child(2):before {
+	background-image: url(../images/liico/js.png);
+}
+.technology ul li:nth-child(3):before {
+	background-image: url(../images/liico/jq.png);
+}
+.technology ul li:nth-child(4):before {
+	background-image: url(../images/liico/c3.png);
+}
+.technology ul li:nth-child(5):before {
+	background-image: url(../images/liico/ajax.png);
+}
+.technology ul li:nth-child(6):before {
+	background-image: url(../images/liico/module.png);
+}
+.technology ul li:nth-child(7):before {
+	background-image: url(../images/liico/angular.png);
+}
+.technology ul li:nth-child(8):before {
+	background-image: url(../images/liico/git.png);
+}
+.technology ul li:nth-child(9):before {
+	background-image: url(../images/liico/nodejs.png);
+}
+.technology ul li a {
+	display: block;
+	width: 100%;
+	padding: 1rem 0rem 1rem 1rem;
+	font:1.5rem/2rem "microsoft yahei";
+	color:#000;
+
+}
+
+/*工作经验*/
+.box{
+	width: 100%;
+	position: relative;
+	font-size: 1.6rem !important;
+	color:#7a979d;
+}
+.box .intro {
+	width: 100%;
+	height: 6.5rem;
+	background-color: #fff;
+	opacity: 0.8;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding:0 1rem 1rem;
+	line-height: 3rem;
+
+}
+.box .intro.current {
+	height: 90% !important;
+}
+.intro p.work{
+	line-height: 2.5rem;
+	margin-top: 0.5rem;
+}
+.intro p>span {
+	padding-left: 4rem;
+}
+.intro p>span::before {
+	content: "";
+	position: absolute;
+	width: 3rem;
+	height: 3rem;
+	margin-left: -3.5rem;
+	background-image: url(../images/experience.png);
+	-webkit-background-size: 9rem 3rem;
+	background-size: 9rem 3rem;
+}
+.intro p>span:nth-child(2)::before {
+	background-position: -3rem 0;
+}
+
+
+
+
+/*脚部*/
+footer {
+	text-align: center;
+	margin-top: 2rem;
+}
+footer p {
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+}
+
+
