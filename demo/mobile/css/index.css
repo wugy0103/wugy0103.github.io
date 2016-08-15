@@ -172,7 +172,7 @@ nav {
 
 }
 .technology ul li:nth-child(1):before {
-	background-image: url(../images/liico/h5.png);
+	background-image: url(../images/liico/H5.png);
 }
 .technology ul li:nth-child(2):before {
 	background-image: url(../images/liico/js.png);
@@ -181,7 +181,7 @@ nav {
 	background-image: url(../images/liico/jq.png);
 }
 .technology ul li:nth-child(4):before {
-	background-image: url(../images/liico/c3.png);
+	background-image: url(../images/liico/C3.png);
 }
 .technology ul li:nth-child(5):before {
 	background-image: url(../images/liico/ajax.png);
