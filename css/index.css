@@ -151,7 +151,7 @@
     position: absolute;
     width: 100px;
     height: 38px;
-    background: url(../images/sl.png) no-repeat;
+    /*background: url(../images/sl.png) no-repeat;*/
     -webkit-background-size: 100px 38px;
     background-size: 100px 38px;
     margin-top: 30px;
@@ -162,7 +162,7 @@
     position: absolute;
     width: 100px;
     height: 44px;
-    background: url(../images/daqian.png) no-repeat;
+    /*background: url(../images/daqian.png) no-repeat;*/
     -webkit-background-size: 100px 44px;
     background-size: 100px 44px;
     margin-top: 30px;
@@ -191,7 +191,7 @@
 .third .experience {
     overflow: hidden;
     visibility: hidden;
-    
+
 }
 .third .experience>div {
     height: 150px;
@@ -304,7 +304,7 @@
     background-color: #46C8AF;
     position: absolute;
     left: 0;
-} 
+}
 .fifth .overT {
     top: 0;
 }
@@ -333,7 +333,7 @@
         position: relative;
         will-change: transform;
         animation: diffuseShadow 3s infinite ease-in;
-        
+
     }
 .callme span:nth-child(1){ animation-delay: .0s;}
 .callme span:nth-child(2){ animation-delay: .200s;}
